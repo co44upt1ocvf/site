@@ -1,0 +1,255 @@
+html{
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(12, 0, 0) 3%, rgb(189, 115, 115) 28%, rgb(128, 40, 40) 68%, rgba(12, 0, 0) 92%);
+    animation: gradient 15s ease infinite;
+    background-size: 350% 350%;
+    background-attachment: fixed;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.wave {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+body{
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+    width: auto;
+    height: 100%;
+    display: block;
+}
+.main_body{
+    background: rgb(27, 27, 27);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: flex;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header{
+    width: auto;
+    display: flex;
+    background: rgb(27, 27, 27);
+    background-repeat: no-repeat;
+    background-position: flex;
+    height: 70px;
+}
+.zsvh{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.back_name{
+    background-color: white;
+    background-attachment: fixed;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 70px;
+    width: 290px;
+}
+.name_site p {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 53px;
+    margin-top: 20px;
+    position: absolute;
+}
+.name_site p:nth-child(1) {
+    color: #000000;
+}
+.name_site p:nth-child(2) {
+    color: #d40000;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+.links{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.vk{
+    width: 35px;
+    height: 35px;
+    margin-right: 40px;
+    margin-top: 15.5px;
+}
+.tg{
+    width: 35px;
+    height: 35px;
+    margin-right: 40px;
+    margin-top: 15.5px;
+}
+.kart{
+    width: 70px;
+    height: 35px;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+.content{
+    margin-left: 40px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+h1{
+    font-size: 100px;
+}
+.req{
+    margin-left: 18%;
+}
+.content_case1{
+    margin-top: 20px;
+    margin-left: 40px;
+    align-self: center;
+}
+.content_case2{
+    font-size: 16px;
+    text-align: justify;
+	width: 400px;
+    margin-top: 25px;
+}
+.content_case3{
+    margin-top: 90px;
+    margin-left: 60px;
+}
+.attention{
+	margin-top: 10px;
+	background-color: #da3240;
+	width: 100%;
+	height: 100px;
+}
+.news{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    position: absolute;
+    overflow: hidden;
+    color:#ffffff;
+    margin-right: 60px;
+}
+.posts{
+    margin-top: 50px;
+    margin-left: 45px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: justify;
+}
+.theme1{
+    font-size: 20px;
+}
+.textBox1{
+    max-width: 400px;
+}
+.check1{
+    text-decoration: underline
+}
+.theme2{
+    font-size: 20px;
+}
+.prepods{
+    text-align: justify;
+    margin-left: 60px;
+    max-width: 400px;
+}
+.RPG{
+    margin-top: 50px;
+    text-align: justify;
+    margin-left: 45px;
+    margin-right: 45px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 860px;
+}
+.theme3{
+    font-size: 20px;
+}
+.RPG_photo{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 50px;
+}
